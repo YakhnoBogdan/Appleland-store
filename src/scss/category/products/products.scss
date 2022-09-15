@@ -1,0 +1,60 @@
+@use '@utils/mixins.scss' as mix;
+
+.products {
+    padding: 30px 0;
+
+    &__title {
+        text-align: center;
+        padding: 20px 0;
+        @include mix.textProp(#000, 3rem, 600);
+        font-family: 'Rubik', sans-serif;
+    }
+
+    &__item {
+        min-height: 350px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        background: center/cover no-repeat url('../assets/img/iphones-bg.jpeg');
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        text-decoration: none;
+        color: #fff;
+        transition: all 1s ease-in-out;
+        position: relative;
+        &::before, &::after {
+            display: block;
+            position: absolute;
+            bottom: 10%;
+            width: 20%;
+            height: 20px;
+            transform: translateX(-50%);
+            opacity: 0;
+            @include mix.textProp(azure, 1.5rem, 500);
+            font-family: 'Rubik', sans-serif;
+        }
+        &::before {
+            content: 'New disgn';
+            left: 40%;
+            transition: all 1.5s ease-in-out;
+
+        }
+        &::after {
+            content: 'New technology';
+            left: 80%;
+            transition: all 3s ease-in-out;
+        }
+        &-title {
+            text-align: center;
+            @include mix.textProp(#fff, 2rem, 500);
+            font-family: 'Rubik', sans-serif;
+            padding: 10px 0;
+        }
+
+    }
+    &__text {
+        @include mix.textProp(#fff, 1.2rem, 400);
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 20px;
+    }
+}

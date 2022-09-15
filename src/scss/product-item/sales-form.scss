@@ -1,0 +1,97 @@
+@use '@utils/mixins.scss' as mix;
+
+.sales-form {
+    &__price {
+        display: block;
+        padding: 10px 5px;
+        @include mix.textProp(rgb(228, 33, 33), 1.5rem, 600);
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__guarantee {
+        margin-bottom: 20px;
+        &-title {
+            margin: 5px 0;
+            @include mix.textProp(#000, 1.2rem, 400);
+            font-family: 'Arial', sans-serif;
+        }
+        & > label {
+            cursor: pointer;
+            position: relative;
+            margin-right: 20px;
+            @include mix.textProp(#000, 1rem, 400);
+            font-family: 'Arial', sans-serif;
+        }
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+        & > a {
+            text-align: center;
+            font-weight: 500;
+            padding: 10px 20px;
+        }
+        & :first-child {
+            background-color: rgb(35, 167, 35);
+        }
+    }
+}
+
+.product-memory {
+    & > li {
+        display: inline-block;
+        margin-top: 15px;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        padding: 2px 5px;
+        background-color: #ccc;
+        @include mix.textProp(#000, 1rem, 500);
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 5px;
+        &:hover {
+            box-shadow: 1px 1px 10px #ccc;
+        }
+    }
+    & > li:nth-child(3) &__link {
+        color: #fff;
+        background-color: green;
+        border: 1px solid #ccc;
+    }
+}
+
+.product-color {
+    &__link {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    & > li {
+        border-radius: 50%;
+        padding: 1.5px;
+        margin-top: 20px;
+        border: 1px solid gray;
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+        &:hover {
+            box-shadow: 1.5px 1.5px 10px #ccc;
+        }
+    }
+    & > li:nth-child(2) {
+        border-color: green;
+    }
+    & > li:nth-child(1) &__link {
+        background-color: gray;
+    }
+    & > li:nth-child(2) &__link {
+        background-color: cornflowerblue;
+    }
+    & > li:nth-child(3) &__link {
+        background-color: red;
+    }
+}

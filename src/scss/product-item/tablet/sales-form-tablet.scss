@@ -1,0 +1,38 @@
+@use '@utils/mixins.scss' as mix;
+
+
+
+@include mix.breakpoint(tabletLarge) {
+    .sales-form {
+        &__price {
+            font-size: 1.7rem;
+        }
+        &__guarantee {
+            &-title {
+                font-size: 1.5rem;
+            }
+            & > label {
+                font-size: 1.3rem;
+            }
+        }
+        &__buttons > a {
+            flex-basis: 25%;
+            height: 30px;
+            font-size: 1.3rem;
+        }
+    }
+    .product-memory > li {
+        margin-top: 20p;
+    }
+}
+
+@include mix.breakpoint(tablet) {
+    .sales-form {
+        &__buttons > a {
+            padding: 10px 30px;
+        }
+        &__buttons > a:first-child {
+            padding: 10px 40px;
+        }
+    }
+}

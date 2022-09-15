@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Main"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <div class="banner">
+                <div class="container">
+                    <h1 class="banner__title">AppleLand</h1>
+                    <ul class="banner__benefit-list">
+                        <li class="banner__benefit">Lorem</li>
+                        <li class="banner__benefit">Apsum</li>
+                        <li class="banner__benefit">Delonniia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="recommended">
+                <div class="container">
+                    <div class="recommended__top">
+                        <h3 class="recommended__title">Recommended</h3>
+                    </div>
+                    <div class="recommended__content product" style="display: grid;">
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$",
+                        "old-or-novelty": "old",
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "new",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "new",
+                        "newPrice": "811$",
+                        "old-or-novelty": "novelty",
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPad 9.1 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$",
+                        "old-or-novelty": "old",
+                        
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "new",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "new",
+                        "newPrice": "811$",
+                        "old-or-novelty": "novelty",
+
+                        })
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="tabs">
+                <div class="tabs__wrapper">
+                    <input type="radio" name="tabs" id="best-sale" checked>
+                    <label for="best-sale">
+                        <span class="tabs__title">Popular</span>
+                    </label>
+                    <input type="radio" name="tabs" id="new-products">
+                    <label for="new-products">
+                        <span class="tabs__title tabs__new">New products</span>
+                    </label>
+                    <div class="tabs__item product" id="popular">
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/iphone.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPhone 12 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                    </div>
+                    <div class="tabs__item product" id="new-products">
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPad 9.1 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPad 9.1 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPad 9.1 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                        @@include('html/product-card.html', {
+                        "imgSrc": "../assets/img/ipad.jpg",
+                        "status": "used",
+                        "cardTitle": "Apple iPad 9.1 128Gb Blue",
+                        "oldPrice": "1085$",
+                        "newPrice": "811$"
+                        })
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+</body>
+
+</html>

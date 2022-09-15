@@ -1,0 +1,41 @@
+@use '@utils/mixins.scss' as mix;
+@use '@utils/vars/colors.scss' as color;
+
+.tabs {
+    width: 100%;
+    & input[type="radio"] {
+        display: none;
+    }
+    & label {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        background-color: #fff;
+        border: 1px solid #ccc; 
+    }
+    &__title {
+        @include mix.textProp(#000, 1.2rem, 500);
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        line-height: 1;
+    }
+    & [name="tabs"]:checked + label {
+        background-color: #52ba5c;
+    }
+    & [name="tabs"]:checked ~ span {
+        color: #fff;
+    }
+
+    #best-sale:checked ~ #popular,
+    #new-products:checked ~ #new-products {
+        display: grid;
+    }
+    .product {
+        padding-top: 20px;
+    }
+}
+
+

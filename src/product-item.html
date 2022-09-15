@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Product"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <div class="container">
+                <div class="product-item">
+                    <div class="product-item__wrapper">
+                        <div class="product-item__img">
+                            <img src="../assets/img/ipad.jpg" alt="ipad" width="300" class="product-item__image">
+                            <span class="product-item__img-sale">SALE</span>
+                        </div>
+                        <div class="produ-item__info">
+                            <h1 class="product-item__title">used Apple iPad 9.1 128Gb Blue</h1>
+                            <ul class="product-memory">
+                                <li><a href="./product-item.html" class="product-memory__link">32Gb</a></li>
+                                <li><a href="./product-item.html" class="product-memory__link">64Gb</a></li>
+                                <li><a href="./product-item.html" class="product-memory__link">128Gb</a></li>
+                                <li><a href="./product-item.html" class="product-memory__link">256Gb</a></li>
+                            </ul>
+                            <ul class="product-color">
+                                <li><a href="./product-item.html" class="product-color__link"></a></li>
+                                <li><a href="./product-item.html" class="product-color__link"></a></li>
+                                <li><a href="./product-item.html" class="product-color__link"></a></li>
+                            </ul>
+                            <div class="sales-form">
+                                <span class="sales-form__price">811$</span>
+                                <div class="sales-form__guarantee">
+                                    <h5 class="sales-form__guarantee-title">Guarantee</h5>
+                                    <label for="guarantee6">
+                                        <input type="radio" name="guarantee" id="guarantee6" checked>
+                                        6 Month
+                                    </label>
+                                    <label for="guarantee12">
+                                        <input type="radio" name="guarantee" id="guarantee12">
+                                        12 Month
+                                    </label>
+                                </div>
+                                <div class="sales-form__buttons">
+                                    <a href="./cart.html" class="buy-button sales-form__button">Buy</a>
+                                    <a href="./cart.html" class="buy-button sales-form__button">On credit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specifications">
+                <h4 class="specifications__title">Specifications</h4>
+                <div class="specifications__wrapper">
+                    <ul class="specifications__list">
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">Generation</span>
+                            <span class="specifications__item-value">iPad Pro 12.9</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">Color</span>
+                            <span class="specifications__item-value">Blue</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">Memory</span>
+                            <span class="specifications__item-value">128Gb</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">Production Year</span>
+                            <span class="specifications__item-value">2021th</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">Display size</span>
+                            <span class="specifications__item-value">12.9"</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">CPU</span>
+                            <span class="specifications__item-value">2.3GHz</span>
+                        </li>
+                        <li class="specifications__item">
+                            <span class="specifications__item-title">RAM</span>
+                            <span class="specifications__item-value">8Gb</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+</body>

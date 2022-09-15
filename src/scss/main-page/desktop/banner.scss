@@ -1,0 +1,31 @@
+@use '@utils/vars/dimensions.scss' as size;
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(desktop) {
+    .banner {
+        height: 60vh;
+        background: center/contain no-repeat url('../assets/img/banner.jpg');
+        &__title, &__benefit {
+            display: none;
+        }
+    }
+}
+.banner {
+    height: 50vh;
+    background-blend-mode: multiply;
+    background: center/contain no-repeat url('../assets/img/banner-mobile.jpg');
+    background-color:  rgba($color: #000000, $alpha: .5);
+    &__title {
+        padding-top: 5%;
+        @include mix.textProp(#fff, 2.5rem, 600);
+        font-family: 'Rubik', sans-serif;
+    }
+    &__benefit {
+        @include mix.textProp(#fff, 1rem, 400);
+        font-family: 'Montserrat', sans-serif;
+        &::before {
+            content: '\2713';
+            margin-right: 5px;
+        }
+    }
+}

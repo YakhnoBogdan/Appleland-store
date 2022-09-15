@@ -1,0 +1,7 @@
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(tablet) {
+    .nav-menu {
+        background-color: #fff;
+    }
+}

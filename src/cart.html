@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Cart"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <div class="container">
+                <div class="cart">
+                    <h1 class="cart__title">Cart</h1>
+                    <div class="cart-item">
+                        <div class="cart-item__wrapper">
+                            <div class="cart-item__img">
+                                <img src="../assets/img/iphone.png" width="70" alt="iphone" class="cart-item__image">
+                            </div>
+                            <div class="cart-item__description">
+                                <h3 class="cart-item__title">used Apple iPhone 12 128Gb Blue</h3>
+                                <div class="cart-item__id">ID: 2121521521</div>
+                                <span class="cart-item__guarantee">Guarantee: 12 Month</span>
+                            </div>
+                            <span class="cart-item__remove"></span>
+
+                        </div>
+                        <div class="cart-item__wrap">
+                            <div class="cart-item__quantity">
+                                <span>-</span>
+                                <input type="text" value="1" readonly>
+                                <span>+</span>
+                            </div>
+                            <span class="cart-item__price">881$</span>
+                        </div>
+
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item__wrapper">
+                            <div class="cart-item__img">
+                                <img src="../assets/img/iphone.png" width="70" alt="iphone" class="cart-item__image">
+                            </div>
+                            <div class="cart-item__description">
+                                <h3 class="cart-item__title">used Apple iPhone 12 128Gb Blue</h3>
+                                <div class="cart-item__id">ID: 2121521521</div>
+                                <span class="cart-item__guarantee">Guarantee: 12 Month</span>
+                            </div>
+                            <span class="cart-item__remove"></span>
+                        </div>
+                        <div class="cart-item__wrap">
+                            <div class="cart-item__quantity">
+                                <span>-</span>
+                                <input type="text" value="1" readonly>
+                                <span>+</span>
+                            </div>
+                            <span class="cart-item__price">881$</span>
+                        </div>
+                    </div>
+                    <div class="cart__total">
+                        <div class="cart__total-price">Total price : 1762$</div>
+                        <a href="./order.html" class="buy-button cart__total-button">Place an order</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+</body>

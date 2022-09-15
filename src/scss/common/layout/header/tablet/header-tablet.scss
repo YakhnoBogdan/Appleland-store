@@ -1,0 +1,7 @@
+@use '@utils/mixins.scss' as mix;
+
+.header {
+    @include mix.breakpoint(tablet) {
+        
+    }
+}

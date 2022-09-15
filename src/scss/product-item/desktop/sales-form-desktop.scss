@@ -1,0 +1,17 @@
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(desktop) {
+    .sales-form {
+        &__price {
+            font-size: 2rem;
+        }
+        &__buttons > a:last-child {
+            flex-basis: 30%;
+        }
+        &__buttons > a:first-child {
+            &:hover {
+                background-color: rgb(35, 137, 35);
+            }
+        }
+    }
+}

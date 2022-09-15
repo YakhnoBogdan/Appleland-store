@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Contacts"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+            <h1 class="contacts-title">Contacts</h1>
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-main">
+                        <div class="contacts-main__address">
+                            <div class="contacts-main__address-icon">
+                                <img src="../assets/img/pos-marker.png" width="20" alt="position marker"
+                                    class="contacts-main__address-img">
+                            </div>
+                            <address class="contacts-main__address-list">
+                                1401 New York Avenu
+                                <br>
+                                1245 Los Angeles Avenu
+                                <br>
+                                1715 San Francisco Avenu
+                                <br>
+                            </address>
+                        </div>
+                        <div class="contacts-main__phone">
+                            <div class="contacts-main__phone-icon">
+                                <img src="../assets/img/phone.png" width="20" alt="phone" class="contacts-main__phone-img">
+                            </div>
+                            <div class="contacts-main__numbers">
+                                <a href="tel:88005553535" class="contacts-main__phone-number">88005553535</a>
+                                <a href="tel:88005553535" class="contacts-main__phone-number">88005532322</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__social">
+                        <h2 class="contacts__social-title">Socials</h2>
+                        <ul class="contacts__social-list">
+                            <li><a href="https://www.facebook.com" class="contacts__social-link contacts__social-facebook"></a></li>
+                            <li><a href="https://www.twitter.com/" class="contacts__social-link contacts__social-twitter"></a></li>
+                            <li><a href="https://www.telegram.com" class="contacts__social-link contacts__social-telegram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+</body>

@@ -1,0 +1,48 @@
+@use '@utils/vars/dimensions.scss' as size;
+@use '@utils/vars/colors' as color;
+
+.nav-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: min(size.$headerMobileHeight, 120px);
+    background-color: #e5deed;
+    transition: all 0.4s ease;
+    left: -100%;
+    overflow-y: scroll;
+    z-index: 9999;
+
+    &-list {
+        & > li  {
+            padding: 0 20px;
+        }
+        & > li > ul > li {
+            padding: 5px 0;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        display: inline-block;
+        width: 100%;
+        line-height: 30px;
+        color: color.$linkColor;
+        cursor: pointer;
+        &-title {
+            width: 100%;
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 2rem;
+        }
+    }
+}
+#checkbox-burger:checked ~ .nav-menu {
+    left: 0%;
+}
+
+.nav-contacts li:last-child {
+    margin-bottom: 100px;
+}

@@ -1,0 +1,83 @@
+@use '@utils/mixins.scss' as mix;
+
+.cart {
+    &__title {
+        @include mix.textProp(#000, 2rem, 500);
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 20px;
+    }
+    &__total {
+        padding: 40px 0;
+        &-price {
+            @include mix.textProp(#000, 1.5rem, 600);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.cart-item {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    &__image {
+        min-width: 70px;
+    }
+    &__title, &__id {
+        margin-bottom: 10px;
+        @include mix.textProp(#000, 1.5rem, 400);
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1;
+    }
+    &__guarantee {
+        @include mix.textProp(#000, 1rem, 400);
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__id, &__price {
+        font-size: 1rem;
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    &__quantity {
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 1px 5px black;
+        & > input {
+            width: 20px;
+            text-align: center;
+            border-left: 0.5px solid #ccc;
+            border-right: 0.5px solid #ccc;
+        }
+        & > span {
+            width: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        & > span:first-child {
+            background-color: #eee;
+        }
+    }
+    &__price  {
+        @include mix.textProp(#000, 1.5rem, 400);
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__remove {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        width: 25px;
+        height: 30px;
+        background: center/cover no-repeat url('../assets/img/trash-cart.png');
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,18 @@
+@use '@utils/vars/dimensions.scss' as var;
+
+.header__logo {
+    display: block;
+    position: relative;
+    min-height: var.$headerLogoSize;
+    min-width: var.$headerLogoSize;
+    border-radius: 5px;
+    background: url('../assets/img/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+

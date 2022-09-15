@@ -1,0 +1,17 @@
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(desktop) {
+    .specifications {
+        &__item {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+        }
+        &__item > span {
+            font-size: 1.5rem;
+        }
+        &__wrapper {
+            width: 80%;
+            margin: 20px auto 0px;
+        }
+    }
+}

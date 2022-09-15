@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Category</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container header-container">
+        <div class="header__left">
+            <div class="burger">
+                <input type="checkbox" id="checkbox-burger" class="burger__checkbox">
+                <label for="checkbox-burger" class="burger__btn">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </label>
+                <nav class='nav-menu'>
+                    <ul class='nav-menu-list'>
+                        <li class='nav-menu-list__item'>
+                            <ul class="nav-category">
+                                <li class="nav-category__title"><a href="../category.html"
+                                        class="nav-menu__link-title">Category</a></li>
+                                <li class="nav-category__item"><a href="./product-list.html" class="nav-menu__link">iPhone</a></li>
+                                <li class="nav-category__item"><a href="./product-list.html" class="nav-menu__link">Macbook</a></li>
+                                <li class="nav-category__item"><a href="./product-list.html" class="nav-menu__link">iPad</a></li>
+                                <li class="nav-category__item"><a href="./product-list.html" class="nav-menu__link">Apple Watch</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='nav-menu-list__item'>
+                            <ul class="nav-contacts">
+                                <li class="nav-contacts__title"><a href="/contacts.html"
+                                    class="nav-menu__link-title">Contacts</a></li>
+                                <li class="nav-contacts__item"><a href="/contacts.html" class="nav-menu__link">Contacts</a></li>
+                                <li class="nav-contacts__item"><a href="/contacts.html" class="nav-menu__link">About us</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </nav>
+            </div>
+            <a href="index.html" class="header__logo">
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="./product-list.html" class="header__nav-link">iPhone</a></li>
+                <li class="header__nav-item"><a href="./product-list.html" class="header__nav-link">Macbook</a></li>
+                <li class="header__nav-item"><a href="./product-list.html" class="header__nav-link">iPad</a></li>
+                <li class="header__nav-item"><a href="./product-list.html" class="header__nav-link">Apple Watch</a></li>
+                <li class="header__nav-item"><a href="./category.html" class="header__nav-link">Categories</a></li>
+                <li class="header__nav-item"><a href="./contacts.html" class="header__nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header__right">
+            <form action="./" class="search-form" method="GET">
+                <input type="search" class="search-form__input">
+            </form>
+            <a href="./cart.html" class="header__cart cart">
+                <img src="assets/img/cart.svg" width="30px" alt="cart" class="header__cart-img">
+                <span class="header__cart-count"></span>
+            </a>
+        </div>
+    </div>
+</header>
+        <main class="main main-category">
+            <div class="container">
+                <h1 class="category__title">Category</h1>
+                <div class="category">
+                    <div class="category__block">
+                        <a href="./product-list.html" class="category__block-title">iPhone</a>
+                        <div class="category__content">
+                            <ul class="category__list-items">
+                                <li><a href="./product-list.html" class="category__link">iPhone 12</a></li>
+                                <li><a href="./product-list.html" class="category__link">iPhone 13</a></li>
+                                <li><a href="./product-list.html" class="category__link">iPhone 14</a></li>
+                            </ul>
+                            <div class="category__img-block">
+                                <a href="./product-list.html">
+                                    <img src="../assets/img/iphones.jpeg" width="135" height="150" alt="iPhnone"
+                                        class="category__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__block">
+                        <a href="./product-list.html" class="category__block-title">iPad</a>
+                        <div class="category__content">
+                            <ul class="category__list-items">
+                                <li><a href="./product-list.html" class="category__link">iPad Pro 12,9 2021</a></li>
+                                <li><a href="./product-list.html" class="category__link">iPad Pro 11 2021</a></li>
+                                <li><a href="./product-list.html" class="category__link">iPad Mini 2021</a></li>
+                            </ul>
+                            <div class="category__img-block">
+                                <a href="./product-list.html">
+                                    <img src="../assets/img/ipads.png" width="135" height="150" alt="iPad"
+                                        class="category__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__block">
+                        <a href="./product-list.html" class="category__block-title">Macbook</a>
+                        <div class="category__content">
+                            <ul class="category__list-items">
+                                <li><a href="./product-list.html" class="category__link">MacBook 2021</a></li>
+                                <li><a href="./product-list.html" class="category__link">MacBook Apple M1</a></li>
+                                <li><a href="./product-list.html" class="category__link">MacBook Pro</a></li>
+                            </ul>
+                            <div class="category__img-block">
+                                <a href="./product-list.html">
+                                    <img src="../assets/img/macbooks.png" width="135" height="150" alt="Macbook"
+                                        class="category__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category__block">
+                        <a href="./product-list.html" class="category__block-title">Apple Watch</a>
+                        <div class="category__content">
+                            <ul class="category__list-items">
+                                <li><a href="./product-list.html" class="category__link">Series 6</a></li>
+                                <li><a href="./product-list.html" class="category__link">Series 7</a></li>
+                            </ul>
+                            <div class="category__img-block">
+                                <a href="./product-list.html">
+                                    <img src="../assets/img/apple-watches.png" width="135" height="150" alt="Apple watch"
+                                        class="category__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="products">
+                <h2 class="products__title">Explore</h2>
+                <div class="products__item">
+                    <h4 class="products__item-title">Some title</h4>
+                    <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit
+                        dolore soluta ipsum, tempore et iusto expedita officia sequi reprehenderit, veritatis fugit quas
+                        nemo obcaecati odio nostrum esse sunt alias corporis voluptatem eligendi omnis eius, ut
+                        reiciendis? Neque, consequatur dolorem.</p>
+                </div>
+                <div class="products__item">
+                    <h4 class="products__item-title">Some title</h4>
+                    <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit
+                        dolore soluta ipsum, tempore et iusto expedita officia sequi reprehenderit, veritatis fugit quas
+                        nemo obcaecati odio nostrum esse sunt alias corporis voluptatem eligendi omnis eius, ut
+                        reiciendis? Neque, consequatur dolorem.</p>
+                </div>
+                <div class="products__item">
+                    <h4 class="products__item-title">Some title</h4>
+                    <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia odit
+                        dolore soluta ipsum, tempore et iusto expedita officia sequi reprehenderit, veritatis fugit quas
+                        nemo obcaecati odio nostrum esse sunt alias corporis voluptatem eligendi omnis eius, ut
+                        reiciendis? Neque, consequatur dolorem.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__list-item">
+                <h4 class="footer__list-title">Catalog</h4>
+                <ul class="footer__list">
+                    <li><a href="./product-list.html" class="footer__link">iPhone</a></li>
+                    <li><a href="./product-list.html" class="footer__link">Macbook</a></li>
+                    <li><a href="./product-list.html" class="footer__link">iPad</a></li>
+                    <li><a href="./product-list.html" class="footer__link">Apple Watch</a></li>
+                </ul>
+            </div>
+            <div class="footer__list-item">
+                <h4 class="footer__list-title">Info and services</h4>
+                <ul class="footer__list">
+                    <li><a href="./category.html" class="footer__link">About</a></li>
+                    <li><a href="./contacts.html" class="footer__link">Contacts</a></li>
+                    <li><a href="./category.html" class="footer__link">Payment & Delivery</a></li>
+                    <li><a href="./category.html" class="footer__link">Guarantee</a></li>
+                </ul>
+            </div>
+            <div class="footer__list-item">
+                <h4 class="footer__list-title">Contacts</h4>
+                <ul class="footer__list-item">
+                    <li><a href="tel:88005553535" class="footer__link">8-800-555-35-35</a></li>
+                    <li><a href="malito:some.mail@gmail.com" class="footer__link">some.mail@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__social">
+            <ul class="footer__social-list">
+                <li><a href="https://www.twitter.com" class="footer__link">Twitter</a></li>
+                <li><a href="https://www.facebook.com/" class="footer__link">Facebook</a></li>
+                <li><a href="https://www.instagram.com" class="footer__link">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+</body>

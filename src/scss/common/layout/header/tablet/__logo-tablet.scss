@@ -1,0 +1,10 @@
+@use '@utils/mixins.scss' as mix;
+@use '@utils/vars/dimensions.scss' as var;
+
+@include mix.breakpoint(tablet) {
+    .header__logo {
+        min-width: calc(var.$headerLogoSize * 1.5);
+        min-height: (var.$headerLogoSize * 1.5);
+
+    }
+}

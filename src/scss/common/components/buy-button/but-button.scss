@@ -1,0 +1,15 @@
+@use '@utils/mixins.scss' as mix;
+
+.buy-button {
+    padding: 10px 30px;
+    background-color: #2977ED;
+    border-radius: 8px;
+    @include mix.textProp(#fff, 1rem, 400);
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background-color: #2364c6;
+    }
+}

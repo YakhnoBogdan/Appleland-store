@@ -1,0 +1,50 @@
+@use '@utils/vars/colors.scss' as color;
+@use '@utils/mixins.scss' as mix;
+
+.main-category {
+    background-color: #eee;
+    overflow: hidden;
+}
+.category {
+    background-color: #eee;
+    padding: 15px 0;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, max(300px, 30%));
+    &__title {
+        text-align: center;
+        @include mix.textProp(#000, 3rem, 600);
+        font-family: 'Rubik', sans-serif;
+        padding: 10px 0;    }
+    &__block {  
+        padding: 10px 5px 5px;
+        min-height: 200px;
+        background-color: #fff;
+        border: 0.5px solid #ccc;
+        &-title {
+            text-align: left;
+            padding-left: 10px;
+            @include mix.textProp(#000, 1.2rem, 600);
+            font-family: 'Rubik', sans-serif;
+            text-decoration: none;
+        }
+    }
+    &__content {
+        padding: 5px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        text-decoration: none;
+        @include mix.textProp(#000, 1rem, 500);
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        &:hover {
+            transform: scale(1.1);
+            color: color.$linkColor;
+        }
+    }
+}

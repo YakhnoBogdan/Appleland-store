@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Product-list"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="main">
+
+            <h1 class="product-list__title">used iPad's</h1>
+            <div class="filter-open-block">
+                <a href="#" class="filter-open">Show filter</a>
+            </div>
+            <aside class="filter">
+                <div class="filter__list">
+                    <div class="filter__list-item">
+                        <span class="filter__title">Price 189$ - 3999$</span>
+                        <p class="filter__range-value" id="rangeValue">up to 189$</p>
+                        <input type="range" name="price-range" min="189" max="3999" value="0" oninput="rangeValue.innerText = `up to ${this.value}$`">
+                    </div>
+                    <div class="filter__list-item">
+                        <span class="filter__title">Instock (19)</span>
+                        <label for="instock-on">
+                            <input type="checkbox" id="instock-on">
+                            <span class="filter__item">ON (19)</span>
+                        </label>
+                        <label for="instock-off">
+                            <input type="checkbox" id="instock-off">
+                            <span class="filter__item">OFF (19)</span>
+                        </label>
+                    </div>
+                    <div class="filter__list-item">
+                        <span class="filter__title">Color</span>
+                        <label for="space-gray">
+                            <input type="checkbox" id="space-gray">
+                            <span class="filter__item">Space gray (19)</span>
+                        </label>
+                        <label for="silver">
+                            <input type="checkbox" id="silver">
+                            <span class="filter__item">Silver (19)</span>
+                        </label>
+                        <label for="product-red">
+                            <input type="checkbox" id="product-red">
+                            <span class="filter__item">Product Red (19)</span>
+                        </label>
+                        <label for="blue">
+                            <input type="checkbox" id="blue">
+                            <span class="filter__item">Blue (19)</span>
+                        </label>
+                    </div>
+                    <div class="filter__list-item">
+                        <span class="filter__title">Production year</span>
+                        <label for="2022th">
+                            <input type="checkbox" id="2022th">
+                            <span class="filter__item">2022 (19)</span>
+                        </label>
+                        <label for="2021th">
+                            <input type="checkbox" id="2021th">
+                            <span class="filter__item">2021 (19)</span>
+                        </label>
+                        <label for="2020th">
+                            <input type="checkbox" id="2020th">
+                            <span class="filter__item">2020 (19)</span>
+                        </label>
+                        <label for="2019th">
+                            <input type="checkbox" id="2019th">
+                            <span class="filter__item">2019 (19)</span>
+                        </label>
+                    </div>
+                    <div class="filter__confirm filter__list-item">
+                        <a href="./product-list.html" class="filter__confirm-button buy-button">Apply the filter</a>
+                    </div>
+                </div>
+            </aside>
+            <div class="container">
+                <div class="product" style="display: grid;">
+                    @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    })
+                    @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    })
+                    @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    })
+                    @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    }) @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    })
+                    @@include('html/product-card.html', {
+                    "imgSrc": "../assets/img/ipad.jpg",
+                    "cardTitle": "used Apple iPad 9.1 128Gb Blue",
+                    "oldPrice": "1085$",
+                    "newPrice": "811$"
+                    })
+                </div>
+                <div class="product-list__description">
+                    <h2 class="product-list__description-title">iPad - a modern powerful tablet at a low price</h2>
+                    <p class="product-list__description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Temporibus non dolore repellat, quas ex quibusdam perferendis quidem? Eos soluta totam quasi
+                        corporis incidunt, molestiae ea repudiandae, amet voluptas dolor porro cupiditate velit?
+                        Voluptate facere odit ipsam accusamus corrupti laborum provident?
+                        <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid eligendi
+                        recusandae
+                        itaque aperiam ullam sit nesciunt nulla harum accusamus?
+                    </p>
+                    <h3 class="product-list__description-subtitle">Choose according to your taste and needs</h3>
+                    <p class="product-list__description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptate veniam illum ullam repudiandae doloribus, aliquid modi aut porro accusantium maxime.
+                    </p>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+</body>

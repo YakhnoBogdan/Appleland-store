@@ -1,0 +1,48 @@
+@use '@utils/mixins.scss' as mix;
+@use '@utils/vars/colors.scss' as color;
+.footer {
+    background-color: #232323;
+    padding: 40px 0 20px 0;
+    &__wrapper  {
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 60%;
+    }
+    &__container {
+        height: 95%;
+    }
+    &__list-item {
+        flex-basis: 30%;
+        padding-right: 1vmax;
+        padding-bottom: 1vmax;
+    }
+    &__list-title {
+        @include mix.textProp(#fff, 1.5rem, 500);
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+    }
+    &__link  {
+        display: inline-block;
+        margin-bottom: 5px;
+        @include mix.textProp(#ccc, 1.2rem, 400);
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        &:hover {
+            color: color.$linkColor;
+        }
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        & li:hover {
+            transform: scale(1.2);
+        }
+    }
+
+}
+

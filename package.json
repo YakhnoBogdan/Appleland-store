@@ -1,8 +1,9 @@
 {
+  "type": "module",
   "name": "applelandstore",
   "version": "1.0.0",
   "description": "Hometask project online store",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,25 @@
   "bugs": {
     "url": "https://github.com/YakhnoBogdan/Appleland-store/issues"
   },
-  "homepage": "https://github.com/YakhnoBogdan/Appleland-store#readme"
+  "homepage": "https://github.com/YakhnoBogdan/Appleland-store#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.54.8",
+    "sass-alias": "^1.0.5"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
 }

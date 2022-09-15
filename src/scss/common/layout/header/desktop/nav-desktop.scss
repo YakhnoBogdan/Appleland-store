@@ -1,0 +1,43 @@
+@use '@utils/mixins.scss' as mix;
+
+.header__nav {
+    display: none;
+}
+@include mix.breakpoint(desktop) {
+    .header__nav {
+        display: block;
+        &-list {
+            display: flex;
+        }
+        &-item {
+            position: relative;
+            margin-right: 1vw;
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #000;
+                height: 3px;
+                width: 100%;
+                bottom: -10px;
+                left: 0;
+                transform: scaleX(0);
+                transform-origin: right bottom;
+                transition: transform .25s ease-in;
+            }
+            &:hover::before {
+                content: "";
+                transform: scaleX(1);
+                transform-origin: left bottom;
+
+            }
+        }
+        &-link {
+            @include mix.textProp(#fff, 1.3rem, 600);
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            line-height: 30px;
+            cursor: pointer;
+
+        }
+    }
+}

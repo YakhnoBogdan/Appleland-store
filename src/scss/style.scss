@@ -1,0 +1,69 @@
+// Base 
+@use './base/reset.scss';
+@use './base/container.scss';
+
+// Header
+@use './common/layout/header/header.scss';
+@use './common/layout/header/nav.scss';
+@use './common/layout/header/burger.scss';
+@use './common/layout/header/_logo';
+@use './common/components/search-form/search-form.scss';
+
+@use './common/layout/header/tablet/header-tablet.scss';
+@use './common/layout/header/tablet/burger-tablet.scss';
+@use './common/layout/header/tablet/nav-tablet.scss';
+@use './common/layout/header/tablet/_logo-tablet';
+
+@use './common/layout/header/desktop/header-desktop.scss';
+@use './common/layout/header/desktop/nav-desktop.scss';
+@use './common/layout/header/desktop/__logo-desktop.scss';
+@use './common/layout/header/desktop/burger-desktop.scss';
+
+
+
+// Main 
+@use './common/layout/main/main.scss';
+@use './main-page/desktop/banner.scss';
+@use './main-page/recommended.scss';
+@use './main-page/tabs.scss';
+@use './common/components/product-card/product-card.scss';
+@use './common/components/product-card/product-card-desktop.scss';
+@use './common/components/buy-button/but-button.scss';
+
+// Footer
+@use './common/layout/footer/footer.scss';
+
+// Category
+
+@use './category/category.scss';
+@use './category/products/products.scss';
+@use './category/products/products-desktop.scss';
+
+// Product-list
+
+@use './product-list/product-list.scss';
+@use './product-list/filter.scss';
+
+// Product-item
+
+@use './product-item/product-item.scss';
+@use './product-item/sales-form.scss';
+@use './product-item/tablet/sales-form-tablet.scss';
+@use './product-item/desktop/product-item-desktop.scss';
+@use './product-item/desktop/sales-form-desktop.scss';
+@use './product-item/specifications.scss';
+@use './product-item/desktop/specifications-desktop.scss';
+
+// Cart
+
+@use './cart/cart.scss';
+@use './cart/desktop/cart-desktop.scss';
+
+// Order
+@use './order/order.scss';
+@use './order/tablet/order-tablet.scss';
+@use './order/desktop/order-desktop.scss';
+
+// Contacts
+
+@use './contacts/contacts.scss';

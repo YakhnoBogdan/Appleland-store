@@ -1,0 +1,25 @@
+@use '@utils/mixins.scss' as mix;
+
+.specifications {
+    background-color: #eee;
+    padding-bottom: 40px;
+    &__title {
+        padding: 20px 0;
+        text-align: center; 
+        @include mix.textProp(rgb(216, 161, 88), 2rem, 400);
+        font-family: 'Montserrat', sans-serif;
+    }
+    &__item {
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child) {
+            border-bottom: 0.5px solid #ccc;
+        }
+        & > span {
+            @include mix.textProp(#000, 1.2rem, 400);
+            font-family: 'Arial', sans-serif;
+        }
+    }
+}

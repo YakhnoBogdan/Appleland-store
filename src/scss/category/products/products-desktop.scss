@@ -1,0 +1,20 @@
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(desktop) {
+    .products {
+        &__item {
+            width: 80%;
+            margin-right: auto;
+            &:nth-child(2n) {
+                margin-left: auto;
+                margin-right: 0;
+            }
+            &:hover {
+                width: 100%;
+                &::before, &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

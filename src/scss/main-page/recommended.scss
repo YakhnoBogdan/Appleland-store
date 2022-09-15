@@ -1,0 +1,25 @@
+@use '@utils/mixins.scss' as mix;
+
+.recommended {
+
+    &__title {
+        @include mix.textProp(#000, 1.5rem, 600);
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        padding: 25px 0;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: rotate(90deg);
+            right: -30px;
+            top: 0;
+            height: 100%;
+            width: 20px;
+            background: center/contain no-repeat url('../assets/img/green-arrow.png');
+        }
+    }
+}

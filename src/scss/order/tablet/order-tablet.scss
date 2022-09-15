@@ -1,0 +1,38 @@
+@use '@utils/mixins.scss' as mix;
+
+@include mix.breakpoint(tablet) {
+    .order {
+        & span {
+            font-size: 1.5rem;
+        }       
+        &__buyer-first {
+            font-size: 1.3rem;
+        }
+        &__input-field {
+            & label {
+                font-size: 1.4rem;
+            }
+            & input {
+                min-height: 50px;
+            }
+        }
+        &__delivery-title {
+            font-size: 1.5rem;
+        }
+    }
+    .order-check {
+        &__title {
+            font-size: 1.8rem;
+        }
+        & span {
+            font-size: 1.5rem;
+        }
+    }
+    .order-confirm {
+        height: 55px;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: rgb(96, 165, 75);
+        }
+    }
+}

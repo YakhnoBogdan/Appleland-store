@@ -1,0 +1,13 @@
+@use '@utils/vars/dimensions.scss' as size;
+
+.main {
+    padding-top:  min(size.$headerMobileHeight, 120px);
+    flex: 1 1 auto;
+    min-height: 80vh;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
